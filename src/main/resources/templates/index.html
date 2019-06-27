@@ -5,14 +5,15 @@
 <title th:text="${titulo}"></title>
 </head>
 <body>
-<h1 th:text="${titulo}"></h1>
-<ul>
-<li>
-<a th:href="@{/params/string(texto='Hola Andrés')}">/params/string?texto=Hola Andrés</a>
-</li>
-<li>
-<a th:href="@{/params/string(texto='Que tal John!')}">/params/string?texto=Que tal John</a>
-</li>
-</ul>
+	<h1 th:text="${titulo}"></h1>
+	<ul>
+		<li><a th:href="@{/params/string(texto='Hola Andrés')}">/params/string?texto=Hola
+				Andrés</a></li>
+		<li><a th:href="@{/params/string(texto='Que tal John!')}">/params/string?texto=Que
+				tal John</a></li>
+		<li><a th:href="@{/params/mix-params(saludo='Como estas andres', numero=7)}">/params/mix-params?saludo=Como estas andre&numero=7</a></li>
+		<li><a th:href="@{/params/mix-params-request(saludo='¡Hey!', numero=3)}">/params/mix-params-request?saludo=Hey&numero=3
+				tal John</a></li>
+	</ul>
 </body>
 </html>
