@@ -4,6 +4,14 @@ public class Usuario {
 	
 	private String nombre;
 	private String apellido;
+	private String email;
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -18,7 +26,7 @@ public class Usuario {
 	}
 	@Override
 	public String toString() {
-		return "Usuario [nombre=" + nombre + ", apellido=" + apellido + "]";
+		return "Usuario [nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + "]";
 	}
 	
 
