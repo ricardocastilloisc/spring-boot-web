@@ -4,6 +4,17 @@ public class Usuario {
 	
 	private String nombre;
 	private String apellido;
+	public Usuario() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Usuario(String nombre, String apellido, String email) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+	}
+
 	private String email;
 	
 	public String getEmail() {
